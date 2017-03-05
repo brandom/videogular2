@@ -1,0 +1,31 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "search.exclude": {
+    "**/.DS_Store": true,
+    "node_modules": true,
+    "npm-debug.log": true,
+    "coverage": true,
+    "compiled": true,
+    "!karma.conf.js": true,
+    "!karma-test-shim.js": true,
+    ".idea": true,
+    ".project": true,
+    ".settings": true,
+    "Thumbs.db": true,
+    "Desktop.ini": true
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "node_modules": true,
+    "npm-debug.log": true,
+    "coverage": true,
+    "compiled": true,
+    "!karma.conf.js": true,
+    "!karma-test-shim.js": true,
+    ".idea": true,
+    ".project": true,
+    ".settings": true,
+    "Thumbs.db": true,
+    "Desktop.ini": true
+  }
+}
