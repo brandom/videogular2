@@ -57,6 +57,16 @@ describe('Videogular Player', () => {
             expect(overlayPlay.getState).toHaveBeenCalled();
             expect(overlayPlay.target.play).toHaveBeenCalled();
         });
+
+        it('current state ended should set target to play', () => {
+            spyOn(overlayPlay, 'getState').and.callFake(() => { return VgStates.VG_ENDED; });
+            spyOn(overlayPlay.target, 'play');
+
+            overlayPlay.onClick();
+
+            expect(overlayPlay.getState).toHaveBeenCalled();
+            expect(overlayPlay.target.play).toHaveBeenCalled();
+        });
     });
 
     describe('getState', () => {

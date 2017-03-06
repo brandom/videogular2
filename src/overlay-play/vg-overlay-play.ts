@@ -80,6 +80,10 @@ export class VgOverlayPlay implements OnInit {
                 this.target.pause();
                 break;
 
+            case VgStates.VG_ENDED:
+                this.target.play();
+                break;
+
             case VgStates.VG_PAUSED:
                 this.target.play();
                 break;
